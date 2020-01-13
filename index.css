@@ -1,0 +1,53 @@
+body{
+
+background-color: rgb(218, 221, 221) !important;
+}
+
+.mainContainer{
+
+    
+    margin-top:10vh;
+    border-radius:20px;
+    background-color: rgba(225, 247, 248, 0.911);
+    
+}
+
+.topBar{
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   padding: 12px;
+   border-bottom: 1px solid rgb(218, 221, 221);
+}
+
+.mainForm .card{
+
+    width:70%;
+    margin: 5vh auto;
+    padding:20px ;
+}
+
+.padding1{
+    padding: 10px;
+    width:70%;
+    margin: auto;
+    
+}
+
+.widthManager{
+   width: 80%;
+
+}
+
+.stages .material-icons{
+
+    font-size: 48px !important;
+}
+.stages .card{
+    width: 80%;
+}
+.stages .cardSelected{
+
+    background-color: rgba(225, 247, 248, 0.911);
+}
+
+
