@@ -45,10 +45,11 @@ background-color: rgb(218, 221, 221) !important;
 }
 .stages .card{
     width: 80%;
+    cursor: pointer;
 }
-.stages .cardSelected{
+ .cardSelected{
 
-    background-color: rgba(225, 247, 248, 0.911);
+    background-color: rgba(225, 247, 248, 0.911) !important;
 }
 
 
