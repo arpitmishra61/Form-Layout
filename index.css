@@ -67,6 +67,12 @@ input[type="file" i] {
     border: initial;
 }
 
+.fileNameParent .fa-times{
+    position: relative;
+    top:0px;
+    right:1.3em ;
+}
+
 @media (max-width:992px)  {
 
     .mainContainer{
