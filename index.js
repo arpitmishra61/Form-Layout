@@ -20,9 +20,16 @@ stagesCard.forEach((card)=>{
         card.classList.add("cardSelected")
         card.querySelector("i").classList.remove("text-info")
     card.querySelector("i").classList.add("text-success")
-    if(card.document.querySelector("p").contains("do"))
-    {
-        document.open()
+    if(card.querySelector("p").innerHTML.includes("Let's"))
+    {console.log("object-s")
+        document.querySelector(".attachment").classList.remove("d-none")
+   
+    }
+
+    else{
+        console.log('kkk')
+       if(!document.querySelector(".attachment").classList.contains("d-none"))
+        document.querySelector(".attachment").classList.add("d-none")
     }
     }
        

@@ -1,6 +1,10 @@
 body{
 
 background-color: rgb(218, 221, 221) !important;
+overflow-x: hidden !important;
+}
+html{
+    overflow-x: hidden;
 }
 
 .mainContainer{
@@ -51,7 +55,17 @@ background-color: rgb(218, 221, 221) !important;
 
     background-color: rgba(225, 247, 248, 0.911) !important;
 }
-
+input[type="file" i] {
+    -webkit-appearance: initial;
+   
+    cursor: default;
+    align-items: baseline;
+    color: white;
+    text-align: start !important;
+     margin-left: 5px;
+     
+    border: initial;
+}
 
 @media (max-width:992px)  {
 
@@ -70,9 +84,7 @@ background-color: rgb(218, 221, 221) !important;
 
     .container{
         max-width:100% !important;
-        margin-left: 10px;
-        margin-right: 10px;
-        
+       
 
     }
     .mainContainer .card{
@@ -83,15 +95,9 @@ background-color: rgb(218, 221, 221) !important;
 
 
 @media (max-width:576px){
-.container .container-sm{
-    width: 98% !important;
-    margin: auto;
-       
-        
 
-    }
-    .mainContainer .card{
-        
-    }
-
+.padding1{
+    width:100%;
+    padding: 3px;
+}
 }
