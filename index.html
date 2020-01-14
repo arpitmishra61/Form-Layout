@@ -61,7 +61,7 @@
 
 
               <input type="file" class="attachment-input d-none" onchange="document.querySelector('.fileName').innerText=this.value.split(/(\\|\/)/g).pop();document.querySelector('.attachment').classList.add('d-none');document.querySelector('.fileNameParent').classList.remove('d-none');
-                document.querySelector('.continueButton').classList.remove('d-none')
+                document.querySelector('.continueButton').classList.remove('d-none');document.querySelector('.fileUploadMessage').classList.remove('d-none');
                 ">
 
             </div>
@@ -87,7 +87,7 @@
         </div>
         <!--End of stages-->
 
-        <p class="text-center d-none fileUploadMessege">
+        <p class="text-center d-none fileUploadMessage">
           We've successfully uploaded your document. We'll apply anything that
           we can in the next step.
         </p>
@@ -100,7 +100,7 @@
               <p class="d-inline-block fileName pt-2 pl-3"></p>
             </div>
             <div class="col-1 p-0  "><i class="fas fa-times  mt-3 pr-4 mr-4"
-                onclick="this.parentElement.classList.add('d-none');removeOtherSelectedCard;(stagesCard); document.querySelector('.continueButton').classList.add('d-none');removeOtherSelectedCard(stagesCard)"></i>
+                onclick="this.parentElement.parentElement.parentElement.classList.add('d-none');removeOtherSelectedCard;(stagesCard); document.querySelector('.continueButton').classList.add('d-none');removeOtherSelectedCard(stagesCard);document.querySelector('.fileUploadMessage').classList.add('d-none');"></i>
             </div>
           </div>
 

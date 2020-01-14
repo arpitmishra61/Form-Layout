@@ -30,6 +30,7 @@ stagesCard.forEach((card)=>{
 
     else{document.querySelector('.continueButton').classList.remove('d-none')
         console.log('kkk')
+        document.querySelector('.fileUploadMessage').classList.add("d-none");
        if(!document.querySelector(".attachment").classList.contains("d-none"))
         document.querySelector(".attachment").classList.add("d-none")
 
