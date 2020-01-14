@@ -53,3 +53,45 @@ background-color: rgb(218, 221, 221) !important;
 }
 
 
+@media (max-width:992px)  {
+
+    .mainContainer{
+        width:100% ;
+        
+
+    }
+    .mainContainer .card{
+        width:90% !important;
+    }
+
+}
+
+@media (max-width:768px)  {
+
+    .container{
+        max-width:100% !important;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+
+    }
+    .mainContainer .card{
+        width:95% !important;
+    }
+
+}
+
+
+@media (max-width:576px){
+.container .container-sm{
+    width: 98% !important;
+    margin: auto;
+       
+        
+
+    }
+    .mainContainer .card{
+        
+    }
+
+}

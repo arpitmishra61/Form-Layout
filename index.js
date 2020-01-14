@@ -20,6 +20,10 @@ stagesCard.forEach((card)=>{
         card.classList.add("cardSelected")
         card.querySelector("i").classList.remove("text-info")
     card.querySelector("i").classList.add("text-success")
+    if(card.document.querySelector("p").contains("do"))
+    {
+        document.open()
+    }
     }
        
 
