@@ -1,143 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="./index.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./index.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-    <title>Project</title>
-  </head>
-  <body>
-    <div class="mainContainer container  p-0">
-      <div class="topBar  bg-white mt-4 clearfix">
-        <i class="fas fa-check-double text-success  ml-2"></i>
-        <span class="text-secondary">Report CE Credit</span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-        <i class="fas fa-times float-right mr-2 text-secondary"></i>
-      </div>
+  <title>Project</title>
+</head>
 
-      <div class="mainForm  container pb-4">
-        <div class="card d-block ">
-          <h5 class="padding1 text-center">
-            If you have your course certification we can use it to jumpstart
-            your CE submission
-          </h5>
-          <p class="mt-4 pt-3 widthManager m-auto">
-            We'll upload it, pull all the right information and you will have
-            access to it any time.
-          </p>
+<body>
+  <div class="mainContainer container  p-0">
+    <div class="topBar  bg-white mt-4 clearfix">
+      <i class="fas fa-check-double text-success  ml-2"></i>
+      <span class="text-secondary">Report CE Credit</span>
 
-          <p class="text-primary text-center mt-3">
-            What does this document look like?
-          </p>
+      <i class="fas fa-times float-right mr-2 text-secondary"></i>
+    </div>
 
-          <div class="stages widthManager m-auto p-0">
-            <div class="row">
-              <div class="col-sm-4 p-0">
-                <div class="card p-4 ">
-                  <i class="material-icons text-info text-center mt-4 ">
-                    check_circle
-                  </i>
-                  <p class="text-center mt-4 content ">Let's do it</p>
-                  
-                </div>
-<div class="d-none attachment">
-  <li class="list-group-item p-1"><i class="fas fa-paperclip ml-4 mt-2 bg-info text-light p-2 rounded-circle " style="cursor: pointer;" onclick="document.querySelector('.attachment-input').click();" ></i> Upload File
-  <i class="fas fa-times float-right  mt-2 mr-2 closeAttachment" onclick="document.querySelector('.attachment').classList.add('d-none');removeOtherSelectedCard(stagesCard);"></i> </li>
-  </div>
+    <div class="mainForm  container pb-4">
+      <div class="card d-block ">
+        <h5 class="padding1 text-center">
+          If you have your course certification we can use it to jumpstart
+          your CE submission
+        </h5>
+        <p class="mt-4 pt-3 widthManager m-auto">
+          We'll upload it, pull all the right information and you will have
+          access to it any time.
+        </p>
 
-  <input type="file" class="attachment-input d-none" onchange="document.querySelector('.fileName').innerText=this.value.split(/(\\|\/)/g).pop();document.querySelector('.attachment').classList.add('d-none')">
-                
+        <p class="text-primary text-center mt-3">
+          What does this document look like?
+        </p>
+
+        <div class="stages widthManager m-auto p-0">
+          <div class="row">
+            <div class="col-sm-4 p-0">
+              <div class="card p-4 ">
+                <i class="material-icons text-info text-center mt-4 ">
+                  check_circle
+                </i>
+                <p class="text-center mt-4 content ">Let's do it</p>
+
               </div>
-              <div class="col-sm-4 p-0">
-                <div class="card p-2 pb-3 add ">
-                  <i class="fas fa-copy fa-3x  text-center mt-4 text-info ">
-                  </i>
-                  <p class=" text-center mt-4 content">I'll made my own documentation</p>
-
-                  
-                </div>
-               
+              <div class="attachment d-none">
+                <li class="list-group-item px-1 py-1"><i
+                    class="fas fa-paperclip ml-2  bg-info text-light p-2 rounded-circle " style="cursor: pointer;"
+                    onclick="document.querySelector('.attachment-input').click();"></i> Upload File
+                  <i class="fas fa-times float-right  mt-2 mr-2 closeAttachment" style="cursor: pointer;" onclick="document.querySelector('.attachment').classList.add('d-none');removeOtherSelectedCard(stagesCard);
+                 "></i>
+                </li>
               </div>
-              <div class="col-sm-4 p-0">
-                <div class="card p-4 ">
-                  <i class="material-icons text-center mt-4 text-info">
-                    speed
-                  </i>
-                  <p class="text-center mt-4 content">I'll do it later.</p>
-                </div>
+
+
+              <input type="file" class="attachment-input d-none" onchange="document.querySelector('.fileName').innerText=this.value.split(/(\\|\/)/g).pop();document.querySelector('.attachment').classList.add('d-none');document.querySelector('.fileNameParent').classList.remove('d-none');
+                document.querySelector('.continueButton').classList.remove('d-none')
+                ">
+
+            </div>
+            <div class="col-sm-4 p-0">
+              <div class="card p-2 pb-3 add ">
+                <i class="fas fa-copy fa-3x  text-center mt-4 text-info ">
+                </i>
+                <p class=" text-center mt-4 content">I'll made my own documentation</p>
+
+
+              </div>
+
+            </div>
+            <div class="col-sm-4 p-0">
+              <div class="card p-4 ">
+                <i class="material-icons text-center mt-4 text-info">
+                  speed
+                </i>
+                <p class="text-center mt-4 content">I'll do it later.</p>
               </div>
             </div>
           </div>
-          <!--End of stages-->
-          
-          <p class="text-center d-none">
-            We've successfully uploaded your document. We'll apply anything that
-            we can in the next step.
-          </p>
+        </div>
+        <!--End of stages-->
 
-          <li class="list-group-item p-1 clearfix">
-            <span
-              ><i
-                class="material-icons text-success pl-2 "
-                style="top: 10px; position:relative;font-size:32px"
-                >check_circle</i
-              >
-              <p class="d-inline-block fileName"></p></span
-            >
-            <i class="fas fa-times float-right mt-3 mr-4"></i>
-          </li>
+        <p class="text-center d-none fileUploadMessege">
+          We've successfully uploaded your document. We'll apply anything that
+          we can in the next step.
+        </p>
 
-          
+        <li class="list-group-item p-1 clearfix fileNameParent d-none">
+          <span><i class="material-icons text-success pl-2 "
+              style="top: 10px; position:relative;font-size:32px">check_circle</i>
+            <p class="d-inline-block fileName"></p>
+          </span>
+          <i class="fas fa-times float-right mt-3 mr-4"
+            onclick="this.parentElement.classList.add('d-none');removeOtherSelectedCard;(stagesCard); document.querySelector('.continueButton').classList.add('d-none');removeOtherSelectedCard(stagesCard)"></i>
+        </li>
 
-          <hr />
-          <div class="m-4">
-            <button class="btn border-dark">
-             <i class="material-icons" style="font-size: 18px; position:relative;top:4px;"> 
-                keyboard_arrow_left</i>
-              </i>
-              <span style="position: relative; top:0px;left:-4px">Back</span>
-            </button>
-            <button class="btn btn-primary float-right continueButton d-none">Continue</button>
-          </div>
+
+
+        <hr />
+        <div class="m-4">
+          <button class="btn border-dark">
+            <i class="material-icons" style="font-size: 18px; position:relative;top:4px;">
+              keyboard_arrow_left</i>
+            </i>
+            <span style="position: relative; top:0px;left:-4px">Back</span>
+          </button>
+          <button class="btn btn-primary float-right continueButton d-none">Continue</button>
         </div>
       </div>
     </div>
-<script src="index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

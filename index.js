@@ -23,13 +23,19 @@ stagesCard.forEach((card)=>{
     if(card.querySelector("p").innerHTML.includes("Let's"))
     {console.log("object-s")
         document.querySelector(".attachment").classList.remove("d-none")
+
+        document.querySelector('.continueButton').classList.add('d-none')
    
     }
 
-    else{
+    else{document.querySelector('.continueButton').classList.remove('d-none')
         console.log('kkk')
        if(!document.querySelector(".attachment").classList.contains("d-none"))
         document.querySelector(".attachment").classList.add("d-none")
+
+        {if(!document.querySelector('.fileNameParent').classList.contains("d-none"))
+            document.querySelector('.fileNameParent').classList.add('d-none')
+        }
     }
     }
        
